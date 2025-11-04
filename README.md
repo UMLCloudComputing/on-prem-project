@@ -34,6 +34,7 @@ Total Range: `10.0.0.1/21`, `10.0.0.0 - 10.0.7.255`
 #### Local DNS Records
 
 `pihole.umlcloudcomputing.org` -> `10.0.0.2`
+`teleport.umlcloudcomputing.org` -> `10.0.0.3`
 
 #### Networking Diagram
 
