@@ -1,0 +1,38 @@
+$TTL    604800
+@       IN      SOA     ns.umlcloudcomputing.local. admin.umlcloudcomputing.local. (
+                  1     ; Serial
+             604800     ; Refresh
+              86400     ; Retry
+            241931     ; Expire
+             604800     ; Negative Cache TTL
+)
+
+; name servers - NS records
+    IN      NS      ns.umlcloudcomputing.local.
+
+; name servers - A records
+ns.umlcloudcomputing.local.          IN      A       10.0.0.2
+
+; OpenShift Container Platform Cluster - A records
+okd-bootstrap.lab.okd.local.        IN      A      10.0.0.31
+okd-control-1.lab.okd.local.        IN      A      10.0.0.32
+okd-control-2.lab.okd.local.         IN      A      10.0.0.33
+okd-control-3.lab.okd.local.         IN      A      10.0.0.34
+okd-worker-1.lab.okd.local.        IN      A      10.0.0.35
+okd-worker-2.lab.okd.local.        IN      A      10.0.0.36
+
+; OpenShift internal cluster IPs - A records
+api.lab.okd.local.    IN    A    10.0.0.30
+api-int.lab.okd.local.    IN    A    10.0.0.30
+*.apps.lab.okd.local.    IN    A    10.0.0.30
+etcd-0.lab.okd.local.    IN    A     10.0.0.32
+etcd-1.lab.okd.local.    IN    A     10.0.0.33
+etcd-2.lab.okd.local.    IN    A    10.0.0.34
+console-openshift-console.apps.lab.okd.local.     IN     A     10.0.0.30
+oauth-openshift.apps.lab.okd.local.     IN     A     10.0.0.30
+
+; OpenShift internal cluster IPs - SRV records
+_etcd-server-ssl._tcp.lab.okd.local.    86400     IN    SRV     0    10    2380    etcd-0.lab
+_etcd-server-ssl._tcp.lab.okd.local.    86400     IN    SRV     0    10    2380    etcd-1.lab
+_etcd-server-ssl._tcp.lab.okd.local.    86400     IN    SRV     0    10    2380    etcd-2.lab
+

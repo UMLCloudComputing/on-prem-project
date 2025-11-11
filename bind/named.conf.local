@@ -1,0 +1,14 @@
+zone "okd.local" {
+    type master;
+    file "/etc/named/zones/db.okd.local"; # okd related enteries
+};
+
+zone "0.0.10.in-addr.arpa" {
+    type master;
+    file "/etc/named/zones/db.10.0.0";  # 10.0.0.0/24 subnet
+};
+
+zone "umlcloudcomputing.local" {
+    type master;
+    file "/etc/named/zones/db.umlcloudcomputing.local"; # internal related enteries
+};
