@@ -12,6 +12,8 @@ Hypervisor: Proxmox
 
 Internal Router: Opnsense
 
+DNS Server: Bind
+
 ## Networking
 
 ### Opnsense and Teleport
@@ -25,16 +27,22 @@ IPv4
 
 Total Range: `10.0.0.1/21`, `10.0.0.0 - 10.0.7.255`
 
-### Reserved Static IPs
-- okd-services: `10.0.0.30`
+### Reserved/Static IPs (vm-name: LAN, WAN)
+- dns: `10.0.0.2`
 - teleport: `10.0.0.3`, `192.168.6.100`
-- pihole: `10.0.0.2`
 - opnsense(gateway): `10.0.0.1`, `192.168.6.101`
+- okd-services: `10.0.0.30`
+- okd-bootstrap: `10.0.0.31`
+- okd-control1: `10.0.0.32`
+- okd-control2: `10.0.0.33`
+- okd-control3: `10.0.0.34`
+- okd-worker1: `10.0.0.35`
+- okd-worker2: `10.0.0.36`
 
 #### Local DNS Records
 
-`pihole.umlcloudcomputing.org` -> `10.0.0.2`
-`teleport.umlcloudcomputing.org` -> `10.0.0.3`
+`pihole.umlcloudcomputing.local` -> `10.0.0.2`
+`teleport.umlcloudcomputing.local` -> `10.0.0.3`
 
 #### Networking Diagram
 
