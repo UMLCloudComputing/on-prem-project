@@ -11,8 +11,8 @@ $TTL    604800
     IN      NS      ns.umlcloudcomputing.local.
 
 ; name servers - A records
-ns.umcloudcomputing.local.          IN      A       10.0.0.2
+ns.umlcloudcomputing.local.          IN      A       10.0.0.2
 
 ; internal/external services - A records
-teleport.umcloudcomputing.local.        IN      A      10.0.0.3
+teleport.umlcloudcomputing.local.        IN      A      10.0.0.3
 
