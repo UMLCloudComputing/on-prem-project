@@ -16,23 +16,9 @@ ns.umlcloudcomputing.local.          IN      A       10.0.0.2
 ; OpenShift Container Platform Cluster - A records
 okd-bootstrap.merrimack.okd.local.        IN      A      10.0.0.31
 okd-control-1.merrimack.okd.local.        IN      A      10.0.0.32
-okd-control-2.merrimack.okd.local.         IN      A      10.0.0.33
-okd-control-3.merrimack.okd.local.         IN      A      10.0.0.34
-okd-worker-1.merrimack.okd.local.        IN      A      10.0.0.35
-okd-worker-2.merrimack.okd.local.        IN      A      10.0.0.36
+okd-worker-1.merrimack.okd.local.        IN      A      10.0.0.33
 
 ; OpenShift internal cluster IPs - A records
-api.merrimack.okd.local.    IN    A    10.0.0.30
-api-int.merrimack.okd.local.    IN    A    10.0.0.30
-*.apps.merrimack.okd.local.    IN    A    10.0.0.30
-etcd-0.merrimack.okd.local.    IN    A     10.0.0.32
-etcd-1.merrimack.okd.local.    IN    A     10.0.0.33
-etcd-2.merrimack.okd.local.    IN    A    10.0.0.34
-console-openshift-console.apps.merrimack.okd.local.     IN     A     10.0.0.30
-oauth-openshift.apps.merrimack.okd.local.     IN     A     10.0.0.30
-
-; OpenShift internal cluster IPs - SRV records
-_etcd-server-ssl._tcp.merrimack.okd.local.    86400     IN    SRV     0    10    2380    etcd-0.lab
-_etcd-server-ssl._tcp.merrimack.okd.local.    86400     IN    SRV     0    10    2380    etcd-1.lab
-_etcd-server-ssl._tcp.merrimack.okd.local.    86400     IN    SRV     0    10    2380    etcd-2.lab
-
+api.merrimack.okd.local.    IN    A    10.0.0.32
+api-int.merrimack.okd.local.    IN    A    10.0.0.32
+*.apps.merrimack.okd.local.    IN    A    10.0.0.33

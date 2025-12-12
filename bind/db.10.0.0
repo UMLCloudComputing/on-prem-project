@@ -19,9 +19,6 @@ $TTL    604800
 ; OpenShift Container Platform Cluster - PTR records
 31    IN    PTR    okd-bootstrap.merrimack.okd.local.
 32    IN    PTR    okd-control-1.merrimack.okd.local.
-33    IN    PTR    okd-control-2.merrimack.okd.local.
-34    IN    PTR    okd-control-3.merrimack.okd.local.
-35    IN    PTR    okd-worker-1.merrimack.okd.local.
-36    IN    PTR    okd-worker-2.merrimack.okd.local.
-30    IN    PTR    api.merrimack.okd.local.
-30    IN    PTR    api-int.merrimack.okd.local.
+33    IN    PTR    okd-worker-1.merrimack.okd.local.
+32    IN    PTR    api.merrimack.okd.local.
+32    IN    PTR    api-int.merrimack.okd.local.
